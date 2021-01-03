@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto; 
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 2%;
+}
+
+.clear{clear: both;}
+
+body{
+    background: rgb(230, 230, 230);
+}
+
+/*Header do meu Site*/
+
+header{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    min-height:600px;
+    padding: 30px 0;
+}
+
+.logo{
+    background-image: url('../images/logo.png');
+    background-size:100% 100%;
+    width: 134px;
+    height: 20px;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+.mobile{
+    display: block;
+    float: right;
+}
+
+.mobile h3{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.mobile ul{
+    width:100%;
+    position: absolute;
+    padding: 70px 0px 30px 0px;
+    top: 0px;
+    left: 0px;
+    background: rgb(27, 27, 71);
+    display: none;
+    list-style-type: none;
+}
+
+.mobile li{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mobile a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.desktop nav{
+    float: right;
+}
+
+.desktop nav ul{
+    list-style-type:none;
+}
+
+.desktop nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.desktop nav a{
+    text-decoration: none;
+    color: white;
+}
+
+li a.btn-a{
+    border:1px solid white;
+    border-radius: 40px;
+    padding: 5px 10px;
+}
+
+div.chamada-header{
+    padding: 150px 0;
+}
+
+.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: 300;
+}
+
+.chamada-header p{
+    font-size: 22px;
+    color: white;
+    margin-top: 50px;
+}
+
+.chamada-header form{
+    margin-top: 15px;
+}
+
+.chamada-header input[type="email"]{
+    width: 230px;
+    height:35px;
+    border: 0;
+    border-radius: 20px;
+    padding-left: 6px;
+    font-size: 15px;
+    outline: 0;
+    display: inline-block;
+}
+
+.chamada-header input[type="submit"]{
+    width: 181px;
+    font-size: 15px;
+    height:42px;
+    background-color:#ff5f27;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    outline: 0;
+    display: inline-block;
+}
+
+section.descricao-danki{
+    text-align: center;
+    padding: 40px 0;
+}
+
+section.descricao-danki p{
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+    max-width: 680px;
+    display:inline-block;
+}
+
+section.descricao-danki2 > .container{
+    padding: 30px 0;
+    max-width: 920px;
+}
+
+
+.descricao-danki2 img{
+    float: left;
+    max-width: 100%;
+    width:45%;
+}
+
+.texto-descricao{
+    float: left;
+    width: 55%;
+    padding-left: 10px;
+}
+
+.texto-descricao h3{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32px;
+    color: black;
+}
+
+.texto-descricao p{
+    font-size: 17px;
+    line-height: 32px;
+    color: gray;
+    padding: 20px 0px;
+}
+
+section.descricao-danki3{
+    padding: 30px 0;
+}
+
+section.descricao-danki3 > .container{
+    background-image: url('../images/bg2.jpg');
+    background-size:cover;
+    max-width: 950px;
+    min-height: 300px;
+    position: relative;
+}
+
+.descricao-danki3 .container .box-depoimento{
+    position: absolute;
+    background: white;
+    left: 40%;
+    width: 60%;
+    bottom: -7%;
+    max-width: 450px;
+    padding: 30px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+.box-depoimento p{
+    margin: 10px 0;
+}
+
+section.servicos{
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.servicos h3{
+    font-size:30px;
+    font-weight: lighter;
+}
+
+
+section.servicos h3 > i{
+    padding:20px 0;
+    font-size:50px;
+}
+
+section.servicos-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+section.servicos-flex > .container{
+    max-width: 1000px;
+}
+
+.box-servicos{
+    width: 31.3%;
+    background: white;
+    margin: 8px;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+section .box-servicos img{
+    width: 100%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.box-wrapper{
+    padding: 10px;   
+}
+
+.box-wrapper h3{
+    font-weight: normal;
+    font-size: 20px;
+    padding: 4px 0;
+    color: black;
+}
+
+.box-wrapper p{
+    line-height: 1.6;
+    color:#6a7c92;
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: lighter;
+}
+
+
+.box-wrapper a{
+   border: 1px solid #6a7c92;
+   display: inline-block;
+   text-decoration: none;
+   padding: 5px;
+   border-radius: 20px;
+   color: #6a7c92;
+}
+
+
+section.portfolio > .container{
+    max-width: 1100px;
+}
+
+section.portfolio h2{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.portfolio .container{
+    background: #f7f7f7;
+    padding: 30px 60px 60px 0;
+}
+
+.empresas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.empresas-single{
+    display: flex;
+    width: 25%;
+    border: 1px solid #ececee;
+    padding: 20px 75px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    padding: 60px 0;
+}
+
+.formulario > .container{
+    max-width: 900px;
+}
+
+.formulario h2{
+    text-align: center;
+    margin: 10px;
+}
+
+
+.formulario form input{
+    width: 100%;
+}
+
+.formulario input[type="text"]{
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    height:40px;
+}
+
+.formulario form textarea{
+    resize: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 120px;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.formulario input[type="submit"]{
+    border-radius: 100px;
+    border: 1px solid #ebebeb;
+    outline: 0;
+    width: 178px;
+    font-size: 15px;
+    margin-top: 10px;
+    height:58px;
+    color: white;
+    background-color: orangered;
+}
+
+footer{
+	margin: 50px 0;
+}
+
+.box-footer{
+	float: left;
+	width: 33.3%;
+	padding: 0 15px;
+}
+
+.box-footer h2{
+	color: #31475e;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.box-footer p{
+	margin-top: 10px;
+	color: #31475e;
+    font-weight: 300;
+    text-align: center;
+	font-size: 15px;
+}
+
+.box-footer form{margin-top: 10px;}
+
+.box-footer button{
+	width: calc(20% - 10px);
+	margin-left: 10px;
+	max-width: 63px;
+	height: 43px;
+	border: 1px solid #31475e;
+	border-radius: 50px;
+	background: white;
+}
+
+.box-footer input[type=text]{
+width: 80%;
+padding-left: 10px;
+  max-width: 208px;
+  height: 43px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: solid 1px #bfbfbf;
+}
+
+.box-footer input[type=text]:focus{outline: 0;}
+
+.box-footer button i{
+	color: #31475e;
+}
+
+
+@media screen and (max-width:860px){
+    .box-servicos{
+        width: 60%;
+        margin: 0 auto;
+        border:10px solid rgb(230, 230, 230);
+        max-width: 600px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+        
+    .texto-descricao{
+        float: none;
+        width: 100%;
+        text-align: left;
+        display: block;
+        padding: 0 40px;
+    }
+
+    .descricao-danki2 img{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        max-width: 500px;
+    }
+
+    .box-servicos{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .empresas-single{
+        width: 100%;
+        margin: 15px auto;
+        max-width: 660px;
+    }
+
+    .box-footer{
+        float: none;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width:1024px){
+    .desktop{display: none;}
+    .mobile h3{
+        display: block;
+        z-index: 2;
+    }
+
+    div.chamada-header{
+        text-align: center;
+    }
+
+    div.chamada-header p{
+        max-width: 600px;
+        display: inline-block;
+    }
+
+    .descricao-danki3 .container .box-depoimento{
+        position: absolute;
+        background: white;
+        left: 50%;
+        width: 80%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        bottom:auto;
+        max-width: 450px;
+        padding: 30px;
+        box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    }
+}
